@@ -862,7 +862,7 @@ img.iphone-black {
 
 img.iphone-white {
   /*height: auto;*/
-  /*max-height:30%;*/
+  max-height:630px;
   width: auto;
   max-width:100%;
 }
