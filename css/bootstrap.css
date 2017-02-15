@@ -2370,11 +2370,19 @@ input[type="button"].btn-block {
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
+@font-face {
+  font-family: 'ThinFont';
+
+  src: url('../fonts/thinfont-bold.otf');
+    format('woff'), url('../fonts/thinfont-thin.ttf') format('truetype');
+}
+
 .glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
+  font-family: 'ThinFont';
   font-style: normal;
   font-weight: normal;
   line-height: 1;

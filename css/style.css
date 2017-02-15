@@ -8,6 +8,19 @@
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
 
+@font-face {
+  font-family: 'ThinFont';
+
+  src: url('../fonts/thinfont-bold.otf');
+    format('woff'), url('../fonts/thinfont-thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pixel';
+
+  src: url('../fonts/04B_03__.TTF') format('truetype');
+}
+
 
 body {
     width: 100%;
@@ -30,8 +43,8 @@ h4,
 h5,
 h6 {
     margin: 0 0 30px;
-    text-transform: uppercase;
-    font-family: Montserrat,sans-serif;
+    /*text-transform: uppercase;*/
+    font-family: ThinFont,Pixel,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -66,7 +79,7 @@ a:focus {
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-	
+
 }
 
 .navbar-brand {
@@ -90,11 +103,11 @@ a:focus {
 }
 
 .nav.navbar-nav {
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(255,255,255,.7);
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,.2);
 }
 
 
@@ -114,7 +127,7 @@ a:focus {
 }
 
 .navbar-custom ul.nav ul.dropdown-menu {
-	  border-radius: 0;	
+	  border-radius: 0;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li {
@@ -317,7 +330,7 @@ hr {
 }
 
 #intro.intro {
-	padding:20% 0 0 0;
+	padding:15% 0 0 0;
 }
 
 .intro .slogan {
@@ -343,7 +356,7 @@ hr {
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
-	font-family: Montserrat, sans-serif;
+	font-family: Pixel, sans-serif;
 	background-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
 	text-transform: uppercase;
@@ -383,7 +396,7 @@ hr {
 .team-social {
 	margin-left: 0;
 	padding-left: 0;
-	
+
 }
 
 .team-social {
@@ -435,7 +448,7 @@ hr {
 
 .service-icon {
 	margin-bottom: 20px;
-}	
+}
 
 
 
@@ -528,7 +541,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: #3bbec0;
+    background: #00C5B8;
 	color: #fff;
     -webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -560,7 +573,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 footer {
 	text-align: center;
 	padding: 50px 0 ;
-	
+
 }
 
 footer p {
@@ -575,11 +588,11 @@ footer p {
 Parallax
 ============================= */
 
-#parallax1{	
+#parallax1{
 	background-image: url(../img/parallax/1.jpg);
 }
 
-#parallax1:after {	
+#parallax1:after {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
@@ -592,12 +605,12 @@ Parallax
 }
 
 
-#parallax2{	
+#parallax2{
 	background-image: url(../img/parallax/2.jpg);
 
 }
 
-#parallax2:after  {	
+#parallax2:after  {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
@@ -617,7 +630,7 @@ Parallax
 .btn {
 	border-radius: 0;
     text-transform: uppercase;
-    font-family: Montserrat,sans-serif;
+    font-family: ThinBold,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -683,7 +696,7 @@ Parallax
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -700,7 +713,7 @@ Parallax
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -776,9 +789,10 @@ Parallax
     }
 
     .navbar-custom.top-nav-collapse {
+        font-family: Pixel;
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
-	
+
     .intro {
         height: 100%;
         padding: 0;
@@ -787,7 +801,7 @@ Parallax
     .brand-heading {
         font-size: 100px;
     }
-	
+
 
     .intro-text {
         font-size: 25px;
@@ -796,16 +810,16 @@ Parallax
 
 }
 @media (max-width:768px) {
-	
+
 	.team.boxed-grey {
 		margin-bottom: 30px;
 	}
-	
+
 	.boxed-grey {
 		margin-bottom: 30px;
 	}
 
-	
+
 }
 
 @media (max-width:480px) {
@@ -813,11 +827,11 @@ Parallax
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
 	}
-	
+
 	.navbar.navbar-custom.navbar-fixed-top {
 		margin-bottom: 30px;
 	}
-	
+
 	.tp-banner-container {
 		padding-top:40px;
 	}
@@ -831,5 +845,52 @@ Parallax
 		border-radius: 50%;
 		font-size: 20px;
 	}
-	
+
+}
+
+img.logo {
+
+  width: 200px;
+}
+
+img.iphone-black {
+  /*height: auto;*/
+  /*max-height:30%;*/
+  width: auto;
+  max-width:60%;
+}
+
+img.iphone-white {
+  /*height: auto;*/
+  /*max-height:30%;*/
+  width: auto;
+  max-width:100%;
+}
+
+.flexcell {
+  display: flex;
+  -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    padding: 10px;
+    margin: 10px;
+
+    text-align: center;
+}
+
+.flexcontainer {
+  top: 30%;
+   display: -webkit-flex;
+   display: flex;
+   /*position: relative;*/
+   -webkit-flex-direction: column /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /*max-height: 80%;*/
 }
