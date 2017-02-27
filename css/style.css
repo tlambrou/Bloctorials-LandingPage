@@ -823,6 +823,10 @@ Parallax
     font-size: 25px;
   }
 
+  .intro .slogan .slogan-intro .spacer h2 {
+    font-size: 34pt;
+  }
+
 
 }
 @media (max-width:768px) {
@@ -835,6 +839,9 @@ Parallax
     margin-bottom: 30px;
   }
 
+  /*.intro .slogan .slogan-intro .spacer h2 {
+    font-size: 50pt;
+  }*/
 
 }
 
@@ -842,7 +849,7 @@ Parallax
 
 
   .intro .slogan .slogan-intro .spacer h2 {
-    font-size: 2em;
+    font-size: 30pt;
   }
 
   .navbar-custom .nav.navbar-nav {
@@ -942,5 +949,17 @@ img.iphone-white {
 .vertcenter {
 
   margin-top: 15%;
+
+}
+
+#play-text {
+
+   text-shadow: 4px 4px #8EED5D;
+
+}
+
+#bloctorials-text {
+
+  text-shadow: 4px 4px #EF284B;
 
 }
