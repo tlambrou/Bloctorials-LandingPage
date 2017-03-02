@@ -849,7 +849,7 @@ Parallax
 
 
   .intro .slogan .slogan-intro .spacer h2 {
-    font-size: 30pt;
+    font-size: 22pt;
   }
 
   .navbar-custom .nav.navbar-nav {
@@ -962,4 +962,8 @@ img.iphone-white {
 
   text-shadow: 4px 4px #EF284B;
 
+}
+
+.top-download {
+  width: 92%;
 }
